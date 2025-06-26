@@ -1,9 +1,16 @@
-# vawsafe
-
-To run on local machine:
+# VawSafe
+> To run on local machine:
 
 1) Open project folder with VSCode
-2) [if you want to create virtual environment] py -m venv .venv
-3) python -m pip install Django
-4) cd vawsafe
-5) py manage.py runserver
+
+> Inside Terminal:
+
+2) `py -m venv .venv` 
+3) `python -m pip install Django`
+4) `cd vawsafe`
+5) `python manage.py install tailwind`
+6) `python manage.py tailwind start`
+
+> In another Terminal:
+
+7) `py manage.py runserver`
