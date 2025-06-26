@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     # new apps
     'desk_officer.apps.DeskOfficerConfig',
+    'social_worker.apps.SocialWorkerConfig',
+    'dswd.apps.DswdConfig',
     'tailwind',
     'theme',
     'django_browser_reload'
