@@ -16,5 +16,5 @@
 7) `py manage.py runserver`
 
 > To access sites:
-1) Replace name with either `dswd, desk_officer, social_worker`
+1) Replace `name` with either `dswd, desk_officer, social_worker`
 2) Go to `http://127.0.0.1.:8000/<name>`
