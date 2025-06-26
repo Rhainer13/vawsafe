@@ -6,8 +6,8 @@
 > Inside Terminal:
 
 2) `py -m venv .venv` 
-3) `python -m pip install Django`
-4) `cd vawsafe`
+3) `cd vawsafe`
+4) `python -m pip install -r requirements.txt`
 5) `python manage.py install tailwind`
 6) `python manage.py tailwind start`
 
