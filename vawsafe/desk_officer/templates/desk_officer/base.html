@@ -1,0 +1,82 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Desk Officer</title>
+    {% tailwind_preload_css %}
+    {% tailwind_css %}
+    <link rel="stylesheet" href="{% static 'desk_officer/style.css' %}">
+</head>
+
+<body>
+    <header class="outline-1">
+        <div class="flex justify-between items-center">
+            <div>
+                <img class="h-20" src="{% static 'desk_officer/images/DSWD-Logo.png' %}" alt="">
+            </div>
+            
+            <div>
+                <p class="text-blue-700 text-2xl">VAWC Case Monitoring and Profiling System</p>
+            </div>
+
+            <div>
+                <p>{{ current_datetime|date:"l, F j, Y, h:i A" }}</p>
+                <!-- <p>{{ current_datetime|date:"H:i:s" }}</p> -->
+            </div>
+        </div>
+    </header>
+    
+    <div class="outline-1 flex">
+        <nav class="outline-1" style="background-color: #48486e;">
+            <div class="flex flex-col m-5" >
+                <div>
+                    <img class="h-20 rounded-full outline-1" src="{% static 'desk_officer/images/desk-officer.png' %}" alt="">
+                    <p>VAW DESK OFFICER</p>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            Dashboard
+                        </li>
+                        <li>
+                            VAW Desk
+                        </li>
+                        <li>
+                            VAWC Victim
+                        </li>
+                        <li>
+                            Social Workers
+                        </li>
+                        <li>
+                            Case Records
+                        </li>
+                        <li>
+                            Services
+                        </li>
+                        <li>
+                            Session
+                        </li>
+                        <li>
+                            Reports
+                        </li>
+                        <li>
+                            Notification
+                        </li>
+                        <li>
+                            File Maintenance
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <main class="outline-1 flex-1">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+</body>
+</html>
