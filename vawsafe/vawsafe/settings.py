@@ -39,12 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # new apps
+    'tailwind',
+    'theme',
+    'django_browser_reload',
     'desk_officer.apps.DeskOfficerConfig',
     'social_worker.apps.SocialWorkerConfig',
     'dswd.apps.DswdConfig',
-    'tailwind',
-    'theme',
-    'django_browser_reload'
 ]
 
 MIDDLEWARE = [
