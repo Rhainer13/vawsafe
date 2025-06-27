@@ -1,5 +1,107 @@
 {% extends "desk_officer/base.html" %}
+{% load static %}
 
 {% block content %}
-desk officer page
+<div class="p-8 space-y-8">
+
+  <!-- Top Stats + Notification -->
+  <div class="grid grid-cols-5 gap-6">
+    <!-- Statistics Cards -->
+    <div class="col-span-3 grid grid-cols-4 gap-4">
+      <div class="bg-white shadow-md p-4 rounded text-center">
+        <p class="text-xl font-bold text-blue-700">Victims</p>
+        <p class="text-2xl font-semibold">2</p>
+      </div>
+      <div class="bg-white shadow-md p-4 rounded text-center">
+        <p class="text-xl font-bold text-blue-700">Cases</p>
+        <p class="text-2xl font-semibold">2</p>
+      </div>
+      <div class="bg-white shadow-md p-4 rounded text-center">
+        <p class="text-xl font-bold text-blue-700">Session</p>
+        <p class="text-2xl font-semibold">1</p>
+      </div>
+      <div class="bg-white shadow-md p-4 rounded text-center">
+        <p class="text-xl font-bold text-blue-700">Social Workers</p>
+        <p class="text-2xl font-semibold">4</p>
+      </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="col-span-2 bg-white shadow-md rounded p-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-lg font-semibold text-blue-700">Notification</h2>
+        <span class="text-red-500 text-xl">❗</span>
+      </div>
+      <p class="text-sm mt-2 text-gray-600">
+        <strong>SOS Alert Received!</strong><br>
+        A victim has triggered the emergency SOS button. Immediate attention is required.
+      </p>
+    </div>
+  </div>
+
+  <!-- Welcome + Contact -->
+  <div class="grid grid-cols-2 gap-6">
+    <!-- Welcome -->
+    <div>
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Welcome to VAWSafe</h2>
+      <p class="text-gray-700 mb-4">
+        In here, you can securely report and monitor Violence Against Women and Children (VAWC) cases, access victim support services, and manage confidential profiles with ease...
+      </p>
+      <ul class="list-disc ml-5 text-gray-700 space-y-1">
+        <li>Real-time SOS alerts and location tracking</li>
+        <li>Verified victim identity via facial recognition</li>
+        <li>Confidential case management by authorized social workers</li>
+        <li>Access to DSWD services and legal assistance</li>
+      </ul>
+
+      <div class="mt-4 flex space-x-4">
+        <img src="{% static 'desk_officer/images/youtube.png' %}" class="h-6" alt="YouTube">
+        <img src="{% static 'desk_officer/images/facebook.png' %}" class="h-6" alt="Facebook">
+        <img src="{% static 'desk_officer/images/gmail.png' %}" class="h-6" alt="Gmail">
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Need Assistance? Contact Us.</h2>
+      <div class="text-gray-800 space-y-4 text-sm">
+        <div>
+          <h3 class="font-semibold">VAW Desk Officer</h3>
+          <p>Ms. Angelica B. Ramos</p>
+          <p class="text-green-600">📱 0917-835-6721</p>
+          <p class="text-blue-600">✉ angelica.ramos@dswd.gov.ph</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Barangay Official</h3>
+          <p>Mr. Carlos B. Reyes – Barangay Captain</p>
+          <p class="text-green-600">📱 0998-234-4501</p>
+          <p class="text-blue-600">✉ c.reyes@sawangcalero.gov.ph</p>
+        </div>
+        <p class="text-red-600 font-bold">
+          You are not alone—VAWSAFE is here to help ensure your safety and dignity.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download App -->
+  <div class="bg-blue-50 p-6 rounded shadow-md">
+    <h2 class="text-2xl font-bold text-blue-700 mb-2">📲 Download the VAWSAFE App</h2>
+    <p class="text-gray-700 mb-4">
+      Welcome to VAWSAFE: VAWC Victims Safety Monitoring and Confidential Profiling System...
+    </p>
+
+    <div class="space-y-2 text-gray-700 text-sm">
+      <p><strong>➤ For Android Users:</strong> <br>
+        Google Play Store Link (Example): <br>
+        📥 Download on Google Play
+      </p>
+      <p><strong>➤ Direct APK Download:</strong> <br>
+        If you're offering a direct APK...<br>
+        📥 Download VAWSAFE APK
+      </p>
+    </div>
+  </div>
+
+</div>
 {% endblock %}

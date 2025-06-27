@@ -28,50 +28,62 @@
         </div>
     </header>
     
-    <div class="outline-1 flex">
-        <nav class="outline-1" style="background-color: #48486e;">
-            <div class="flex flex-col m-5" >
-                <div>
-                    <img class="h-20 rounded-full outline-1" src="{% static 'desk_officer/images/desk-officer.png' %}" alt="">
-                    <p>VAW DESK OFFICER</p>
+    <div class="outline-1 flex min-h-screen">
+        <nav class="w-64 bg-[#48486e] text-white min-h-screen">
+            <div class="flex flex-col items-center py-6 px-4">
+
+                <!-- Avatar -->
+                <div class="flex flex-col items-center mb-8">
+                <img class="h-24 w-24 rounded-full border-2 border-white" src="{% static 'desk_officer/images/desk-officer.png' %}" alt="Desk Officer">
+                <span class="mt-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">VAW DESK OFFICER</span>
                 </div>
 
-                <div>
-                    <ul>
-                        <li>
-                            Dashboard
-                        </li>
-                        <li>
-                            VAW Desk
-                        </li>
-                        <li>
-                            VAWC Victim
-                        </li>
-                        <li>
-                            Social Workers
-                        </li>
-                        <li>
-                            Case Records
-                        </li>
-                        <li>
-                            Services
-                        </li>
-                        <li>
-                            Session
-                        </li>
-                        <li>
-                            Reports
-                        </li>
-                        <li>
-                            Notification
-                        </li>
-                        <li>
-                            File Maintenance
-                        </li>
-                    </ul>
-                </div>
+                <!-- Menu Items -->
+                <ul class="w-full space-y-2 text-sm font-medium">
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/dashboard.png' %}" class="h-5" alt="">
+                    Dashboard
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/vawdesk.png' %}" class="h-5" alt="">
+                    VAW Desk
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/victims.png' %}" class="h-5" alt="">
+                    VAWC Victims
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/social-workers.png' %}" class="h-5" alt="">
+                    Social Workers
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/case-records.png' %}" class="h-5" alt="">
+                    Case Records
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/services.png' %}" class="h-5" alt="">
+                    Services
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/session.png' %}" class="h-5" alt="">
+                    Session
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/reports.png' %}" class="h-5" alt="">
+                    Reports
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/notification.png' %}" class="h-5" alt="">
+                    Notification
+                </li>
+                <li class="flex items-center gap-3 px-4 py-2 hover:bg-[#3e3e5e] rounded cursor-pointer">
+                    <img src="{% static 'icons/file-maintenance.png' %}" class="h-5" alt="">
+                    File Maintenance
+                </li>
+                </ul>
             </div>
         </nav>
+
     
         <main class="outline-1 flex-1">
             {% block content %}

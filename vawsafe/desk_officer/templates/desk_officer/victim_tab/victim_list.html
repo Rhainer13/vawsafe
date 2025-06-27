@@ -1,0 +1,88 @@
+{% extends "desk_officer/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="p-6 space-y-6">
+
+  <!-- Page Title -->
+  <div>
+    <h1 class="text-3xl font-bold text-blue-800">VAWC Victims</h1>
+    <p class="text-sm text-blue-700 mt-1">List of VAWC Victims</p>
+  </div>
+
+  <!-- Search and Filters -->
+  <div class="flex flex-wrap items-center gap-4 bg-blue-50 p-4 rounded shadow">
+    <!-- Search Bar -->
+    <div class="flex items-center border rounded overflow-hidden">
+      <input type="text" placeholder="Search" class="px-3 py-2 focus:outline-none" />
+      <button class="bg-blue-600 p-2 text-white">
+        🔍
+      </button>
+    </div>
+
+    <!-- Dropdown Filters -->
+    <select class="px-3 py-2 border rounded text-sm text-gray-600">
+      <option>Gender</option>
+      <option>All</option>
+      <option>Female</option>
+      <option>Male</option>
+    </select>
+    <select class="px-3 py-2 border rounded text-sm text-gray-600">
+      <option>Type of Violence</option>
+      <option>All</option>
+      <option>Sexual Abuse</option>
+      <option>Physical Abuse</option>
+    </select>
+    <select class="px-3 py-2 border rounded text-sm text-gray-600">
+      <option>Perpetrators</option>
+      <option>All</option>
+      <option>Stranger</option>
+      <option>Immediate Family</option>
+    </select>
+  </div>
+
+  <!-- Victim Table -->
+  <div class="overflow-x-auto shadow border border-gray-200 rounded">
+    <table class="min-w-full text-sm text-left">
+      <thead class="bg-blue-800 text-white">
+        <tr>
+          <th class="px-4 py-2">Victim No.</th>
+          <th class="px-4 py-2">Victim Name</th>
+          <th class="px-4 py-2">Gender</th>
+          <th class="px-4 py-2">Type of Violence</th>
+          <th class="px-4 py-2">Perpetrators</th>
+          <th class="px-4 py-2">Intake Form</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white text-gray-800">
+        <tr class="border-t">
+          <td class="px-4 py-2">VAW-2025-05-00123</td>
+          <td class="px-4 py-2">Rosa Ann Bautista</td>
+          <td class="px-4 py-2">Female</td>
+          <td class="px-4 py-2">Sexual Abuse</td>
+          <td class="px-4 py-2">Stranger</td>
+          <td class="px-4 py-2 space-x-2">
+            <a href="#" class="text-blue-600 underline">View PDF</a>
+            <a href="#" class="text-blue-500">✏️</a>
+            <a href="#" class="text-red-500">🗑️</a>
+          </td>
+        </tr>
+        <tr class="border-t">
+          <td class="px-4 py-2">VAW-2025-06-00123</td>
+          <td class="px-4 py-2">Clarissa Mae Villanueva</td>
+          <td class="px-4 py-2">Female</td>
+          <td class="px-4 py-2">Psychological Abuse</td>
+          <td class="px-4 py-2">Immediate Family</td>
+          <td class="px-4 py-2 space-x-2">
+            <a href="#" class="text-blue-600 underline">View PDF</a>
+            <a href="#" class="text-blue-500">✏️</a>
+            <a href="#" class="text-red-500">🗑️</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+{% endblock %}
